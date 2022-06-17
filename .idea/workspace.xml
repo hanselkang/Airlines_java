@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c94709c0-27d0-4770-bb3e-4d88d523484b" name="Changes" comment="rank enum">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flightcrews/CabinCrew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flightcrews/FlightCrew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flightcrews/Pilot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flightcrews/Rank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/flightcrews/PilotTest.java" afterDir="false" />
+    <list default="true" id="c94709c0-27d0-4770-bb3e-4d88d523484b" name="Changes" comment="Pilot, TDD, get position. Made flightcrew package for ranks">
+      <change afterPath="$PROJECT_DIR$/src/main/java/planes/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/planes/PlaneModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/planes/PlaneTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rank.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -59,16 +55,16 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="planes" />
       <recent name="FlightCrew" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PilotTest">
-    <configuration name="PassengerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PlaneTest">
+    <configuration name="All in Airlines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Airlines" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PassengerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,38 +80,6 @@
       <option name="PACKAGE_NAME" value="flightcrews" />
       <option name="MAIN_CLASS_NAME" value="flightcrews.PilotTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PilotTest.getName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Airlines" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="flightcrews.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="FlightCrew" />
-      <option name="MAIN_CLASS_NAME" value="flightcrews.PilotTest" />
-      <option name="METHOD_NAME" value="getName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PilotTest.getRank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Airlines" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="flightcrews.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="FlightCrew" />
-      <option name="MAIN_CLASS_NAME" value="flightcrews.PilotTest" />
-      <option name="METHOD_NAME" value="getRank" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,13 +100,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlaneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Airlines" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="planes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="planes" />
+      <option name="MAIN_CLASS_NAME" value="planes.PlaneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlaneTest.getCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Airlines" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="planes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="planes" />
+      <option name="MAIN_CLASS_NAME" value="planes.PlaneTest" />
+      <option name="METHOD_NAME" value="getCapacity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaneTest" />
+        <item itemvalue="JUnit.PlaneTest.getCapacity" />
+        <item itemvalue="JUnit.All in Airlines" />
         <item itemvalue="JUnit.PilotTest" />
         <item itemvalue="JUnit.PilotTest.hasPosition" />
-        <item itemvalue="JUnit.PilotTest.getRank" />
-        <item itemvalue="JUnit.PilotTest.getName" />
-        <item itemvalue="JUnit.PassengerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655462389300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Pilot, TDD, get position. Made flightcrew package for ranks">
+      <created>1655466266305</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655466266305</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +204,7 @@
     <MESSAGE value="passenger class" />
     <MESSAGE value="passenger tdd" />
     <MESSAGE value="rank enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="rank enum" />
+    <MESSAGE value="Pilot, TDD, get position. Made flightcrew package for ranks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pilot, TDD, get position. Made flightcrew package for ranks" />
   </component>
 </project>
