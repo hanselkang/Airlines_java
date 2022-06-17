@@ -7,7 +7,8 @@ public enum PlaneModel {
     B3("777X",300,6000),
     A1("310",70,1200),
     A2("330",100,2200),
-    A3("380",250,4200);
+    A3("380",250,4200),
+    P1("Airforce One",1,6000);
 
     private final String model;
     private final int capacity;

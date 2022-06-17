@@ -30,6 +30,9 @@ public class Pilot extends FlightCrew {
         return pilotLicenceNumber;
     }
 
+    public String pilotFlyFlight() {
+        return "Hello, we will have a perfect take-off";
+    }
 
 }
 
