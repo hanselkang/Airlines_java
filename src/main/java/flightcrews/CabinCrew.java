@@ -21,4 +21,8 @@ public class CabinCrew extends FlightCrew{
     public String getPosition() {
         return rank.getPosition();
     }
+
+    public String canTell() {
+        return "Please press the button if you need any help";
+    }
 }
